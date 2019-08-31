@@ -27,11 +27,19 @@ public class Company {
         shopping_cart_price.add(produto.getPrice());
     }
 
+
+
     public float getBudget(){
         float total_price = 0;
+
+        System.out.println("\n-----Orçamento--------\nProduto:\tPreço\n");
+
         for(int index=0; index<shopping_cart_price.size(); index++){
+            System.out.println(shopping_cart_name.get(index) +"\t" + shopping_cart_price.get(index));
             total_price += shopping_cart_price.get(index);
         }
+        System.out.println("\n----------------------\n");
+
         return total_price;
     }
 
