@@ -13,7 +13,4 @@ public class ProdutoSimples extends Produto{
         return this.price;
     }
 
-    public void modifyStock(int modifier){
-        this.stock = this.stock + modifier;
-    }
 }

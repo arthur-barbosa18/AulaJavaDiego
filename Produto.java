@@ -9,10 +9,12 @@ public abstract class Produto
     protected int stock;
 
     public abstract float getPrice();
-    public abstract void modifyStock(int modifier);
+    //public abstract void modifyStock(int modifier);
+
     public int getStock(){
         return this.stock;
     }
+    
     public String getName(){
         return this.name;
     }
@@ -26,6 +28,11 @@ public abstract class Produto
 
     public UUID getUUID(){
         return this.uuid;
+    }
+
+    
+    public void modifyStock(int modifier){
+        this.stock = this.stock + modifier;
     }
 
 }
